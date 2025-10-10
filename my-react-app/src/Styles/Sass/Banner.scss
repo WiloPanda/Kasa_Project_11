@@ -1,0 +1,46 @@
+.banner {
+    border-radius: 25px;
+    height: 223px;
+    margin-bottom: 35px;
+    position: relative;
+    width: 100%;
+
+    &__txt {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-weight: 700;
+        font-size: 48px;
+        width: max-content;
+        text-shadow:
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px 1px 0 black,
+            1px 1px 0 black,
+            -2px 5px 5px rgba(0, 0, 0, 0.6);
+    }
+
+    &__img {
+        border-radius: 25px;
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    &.home-banner {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+
+        .banner__img {
+            filter: brightness(30%);
+        }
+    }
+
+    &.about-banner {
+
+        .banner__img {
+            filter: brightness(60%);
+        }
+    }
+}
