@@ -1,8 +1,18 @@
 main {
     max-width: 1240px;
     margin: 0 auto;
+    flex: 1;
+    padding: 0px 20px;
 }
 
+html,
 body {
     font-family: montserrat;
+    margin: 0;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }

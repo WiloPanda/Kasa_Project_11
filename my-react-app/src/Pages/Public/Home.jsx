@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import logementService from '@/Services/logement.service';
 import Card from '@/Components/Card.jsx'
-import Banner from '../../Components/Banner';
+import Banner from '@/Components/Banner';
 import imgBanner from '@/Assets/Images/banner.png'
 import { NavLink } from 'react-router-dom';
 
@@ -15,7 +15,6 @@ const Home = () => {
 
     const getInfo = async () => {
         const data = await logementService.getAllLogement()
-        console.log(data)
         setLogements(data)
     }
 

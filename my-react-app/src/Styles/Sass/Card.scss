@@ -6,10 +6,25 @@ $background-color: #F6F6F6;
     background-color: $background-color;
     border-radius: 25px;
 
+    @media (max-width: 767.98px) {
+        padding: 0px;
+        background-color: unset;
+        margin-top: 22px;
+    }
+
     .card__list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 50px 60px;
+
+        @media (max-width : 1224px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (max-width: 767.98px) {
+            grid-template-columns: 1fr;
+            gap: 20px 0px;
+        }
     }
 }
 
@@ -22,9 +37,11 @@ $background-color: #F6F6F6;
 }
 
 .card {
-    max-width: 340px;
     height: 340px;
 
+    @media (max-width: 767.98px) {
+        min-width: 335px;
+    }
 
     &__img {
         object-fit: cover;

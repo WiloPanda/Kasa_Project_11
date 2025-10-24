@@ -1,0 +1,40 @@
+.notFound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 139px;
+
+    @media (max-width: 768px) {
+        gap: 113px;
+    }
+}
+
+.error404 {
+    font-size: 288px;
+    font-weight: 700;
+    color: $main-color;
+
+    @media (max-width: 768px) {
+        font-size: 96px;
+    }
+}
+
+.errorMessage {
+    font-size: 36px;
+    font-weight: 500;
+    color: $main-color;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        font-size: 18px;
+    }
+}
+
+.errorLink {
+    color: black;
+    font-size: 18px;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+}

@@ -1,9 +1,13 @@
 .banner {
-    border-radius: 25px;
+    border-radius: 10px;
     height: 223px;
     margin-bottom: 35px;
     position: relative;
     width: 100%;
+
+    @media (max-width: 767.98px) {
+        height: 111px;
+    }
 
     &__txt {
         position: absolute;
@@ -12,18 +16,22 @@
         transform: translate(-50%, -50%);
         color: white;
         font-weight: 700;
-        font-size: 48px;
-        width: max-content;
-        text-shadow:
-            -1px -1px 0 black,
-            1px -1px 0 black,
-            -1px 1px 0 black,
-            1px 1px 0 black,
-            -2px 5px 5px rgba(0, 0, 0, 0.6);
+        width: 90%;
+        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black, -2px 5px 5px rgba(0, 0, 0, 0.6);
+        font-size: clamp(30px, 5vw, 48px);
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    @media (max-width: 767.98px) {
+        .banner__txt {
+            text-align: left;
+            font-size: 24px;
+        }
     }
 
     &__img {
-        border-radius: 25px;
+        border-radius: 10px;
         height: 100%;
         object-fit: cover;
         width: 100%;
