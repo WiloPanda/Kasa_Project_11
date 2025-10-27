@@ -3,9 +3,9 @@ import React from "react";
 import starFull from "@/Assets/Images/full-star.png";
 import starEmpty from "@/assets/images/empty-star.png";
 
-const Rate = ({ id, rating }) => {
+const Rate = ({ rating }) => {
     const numOfStar = [1, 2, 3, 4, 5]
-    console.log({ rating })
+
     return (
         <div className="allStars">
             {numOfStar.map((starIndex) =>
