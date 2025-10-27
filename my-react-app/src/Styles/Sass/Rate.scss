@@ -1,0 +1,13 @@
+.allStars {
+    display: flex;
+    gap: 15px;
+    justify-content: end;
+    padding-bottom: 24px;
+}
+
+.etoile {
+    @media (max-width: 768px) {
+        width: 18px;
+        height: 18px;
+    }
+}
