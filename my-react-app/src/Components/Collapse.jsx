@@ -1,6 +1,6 @@
 import React, { useId, useState } from "react";
 
-const Collapse = ({ title, content, items, className = "", children }) => {
+const Collapse = ({ title, content, items, className = "" }) => {
     const [open, setOpen] = useState(false);
     const contentId = useId();
 
